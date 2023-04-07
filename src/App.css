@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+
+body {
+	background-color: #131313;
+}
+
+#root {
+	margin: 0 auto;
+	padding: 2rem;
+	color: white;
+	font-family: sans-serif;
+	letter-spacing: 0.1ch;
+	overflow: hidden;
+}
+
+.container {
+	border-radius: 1rem;
+	margin: auto;
+	padding: 1rem;
+	max-width: 60rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.bio {
+	font-size: 1.2rem;
+	padding-top: 5px;
+}
+
+.inputContainer {
+	padding-bottom: 1rem;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 1rem;
+}
+
+#inputField {
+	padding: 0.5rem;
+	border-radius: 1rem;
+	border: none;
+	font-family: sans-serif;
+	letter-spacing: 0.1ch;
+	cursor: text;
+}
+
+#addTask {
+	border-radius: 1rem;
+	border: none;
+	background-color: white;
+	font-family: sans-serif;
+	letter-spacing: 0.1ch;
+	font-weight: 500;
+	cursor: pointer;
+	padding-inline: 1rem;
+}
+
+.todoItemContainer {
+	min-height: 3rem;
+	max-width: 30rem;
+	margin: 1.5rem;
+	padding: 1rem 2rem;
+	font-size: 1.2rem;
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	align-items: center;
+	background: rgba(47, 79, 79, 0.1);
+	border-radius: 32px;
+}
+.todoItem {
+	list-style: none;
+	text-align: center;
+}
+.deleteTodo {
+	justify-self: flex-end;
+	margin-left: 2rem;
+	border-radius: 50%;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	height: 36px;
+	aspect-ratio: 1;
+}
