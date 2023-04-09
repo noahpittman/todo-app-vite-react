@@ -5,7 +5,7 @@ import Header from "./Components/Header.jsx";
 import { useState, useEffect } from "react";
 
 function App() {
-	const localList = JSON.parse(localStorage.getItem("list"));
+	const localList = JSON.parse(localStorage.getItem("list")) || [];
 
 	// state with list of todos
 	const [list, setList] = useState(localList);
