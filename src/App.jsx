@@ -69,7 +69,7 @@ function App() {
 				</div>
 
 				<ul>
-					{list.map((todo) => (
+					{list?.map((todo) => (
 						<div className="todoItemContainer">
 							<li className="todoItem" key={todo.id}>
 								{todo.todo}
