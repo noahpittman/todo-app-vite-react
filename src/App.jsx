@@ -2,11 +2,18 @@ import "./App.css";
 
 // components
 import Header from "./Components/Header.jsx";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
+	const localList = JSON.parse(localStorage.getItem("list"));
+
 	// state with list of todos
-	const [list, setList] = useState([]);
+	const [list, setList] = useState(localList);
+
+	useEffect(() => {
+		localStorage.setItem("list", JSON.stringify(list));
+	}, [list]);
+
 	// state with input value
 	const [input, setInput] = useState("");
 
